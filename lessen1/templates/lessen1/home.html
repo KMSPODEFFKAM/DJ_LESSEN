@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+</head>
+<body>
+    <h1>Список ссылок</h1>
+    {% for title, url in dict_urls.items %}
+        <li><a href="{{url}}">{{title}}</a></li>
+        <br>
+    {% endfor %}
+</body>
+</html>
